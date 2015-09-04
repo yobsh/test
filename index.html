@@ -1,5 +1,65 @@
-<html>
-<body>
-<h1>hola mundo</h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <label>Calculadora de dinero</label><br><br>
+    <div id='1000'><span class='amount'>$1000</span><input type='text'></div>
+    <div id='500'><span class='amount'>$500</span><input type='text'></div>
+    <div id='200'><span class='amount'>$200</span><input type='text'></div>
+    <div id='100'><span class='amount'>$100</span><input type='text'></div>
+    <div id='50'><span class='amount'>$50</span><input type='text'></div>
+    <div id='20'><span class='amount'>$20</span><input type='text'></div>
+    <div id='10'><span class='amount'>$10</span><input type='text'></div>
+    <div id='5'><span class='amount'>$5</span><input type='text'></div>
+    <div id='2'><span class='amount'>$2</span><input type='text'></div>
+    <div id='1'><span class='amount'>$1</span><input type='text'></div><br>
+    <div id='result'>$0</div>
+    <button id='calcular'>Calcular</button>
+    <button id='limpiar'>Limpiar</button>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+      $('#calcular').click(function(){
+          suma = 0;
+          suma = suma + $('#1000 input').val() * 1000;
+          suma = suma + $('#500 input').val() * 500;
+          suma = suma + $('#200 input').val() * 200;
+          suma = suma + $('#100 input').val() * 100;
+          suma = suma + $('#50 input').val() * 50;
+          suma = suma + $('#20 input').val() * 20;
+          suma = suma + $('#10 input').val() * 10;
+          suma = suma + $('#5 input').val() * 5;
+          suma = suma + $('#2 input').val() * 2;
+          suma = suma + $('#1 input').val() * 1;
+          suma = '$'+suma
+          $('#result').html(suma);
+      });
+
+      $('#limpiar').click(function(){
+          $('#1000 input').val('');
+          $('#500 input').val('');
+          $('#200 input').val('');
+          $('#100 input').val('');
+          $('#50 input').val('');
+          $('#20 input').val('');
+          $('#10 input').val('');
+          $('#5 input').val('');
+          $('#2 input').val('');
+          $('#1 input').val('');
+          $('#result').html('$0');
+      });
+    </script>
+
+  </body>
 </html>
