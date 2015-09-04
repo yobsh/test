@@ -6,60 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
 
-    <label>Calculadora de dinero</label><br><br>
-    <div id='1000'><span class='amount'>$1000</span><input type='text'></div>
-    <div id='500'><span class='amount'>$500</span><input type='text'></div>
-    <div id='200'><span class='amount'>$200</span><input type='text'></div>
-    <div id='100'><span class='amount'>$100</span><input type='text'></div>
-    <div id='50'><span class='amount'>$50</span><input type='text'></div>
-    <div id='20'><span class='amount'>$20</span><input type='text'></div>
-    <div id='10'><span class='amount'>$10</span><input type='text'></div>
-    <div id='5'><span class='amount'>$5</span><input type='text'></div>
-    <div id='2'><span class='amount'>$2</span><input type='text'></div>
-    <div id='1'><span class='amount'>$1</span><input type='text'></div><br>
-    <div id='result'>$0</div>
-    <button id='calcular' class='btn btn-primary'>Calcular</button>
-    <button id='limpiar' class='btn btn-default'>Limpiar</button>
+    
+    <div id='top-bar'><img src="img/app-logo.png"></div>
+    <div id='main-holder'>
+      
+      <div id='1000' class='money-row'><img src='img/mx-1000.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='500' class='money-row'><img src='img/mx-500.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='200' class='money-row'><img src='img/mx-200.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='100' class='money-row'><img src='img/mx-100.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='50' class='money-row'><img src='img/mx-50.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='20' class='money-row'><img src='img/mx-20.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='10' class='money-row'><img src='img/mx-10.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='5' class='money-row'><img src='img/mx-5.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='2' class='money-row'><img src='img/mx-2.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='1' class='money-row'><img src='img/mx-1.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='50c' class='money-row'><img src='img/mx-0.5.png'><button class='plus btn'><i class="fa fa-plus"></i></button><span class='ammount'>0</span><button class='minus btn'><i class="fa fa-minus"></i></button></div>
+      
+      <div id='result'>
+        <div class='holder'>
+          <span style='margin-left: 31px;'>Total</span>
+          <span class='total'>$0</span>
+        </div>
+      </div>
+    
+    </div>  
 
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-
-    <script>
-      $('#calcular').click(function(){
-          suma = 0;
-          suma = suma + $('#1000 input').val() * 1000;
-          suma = suma + $('#500 input').val() * 500;
-          suma = suma + $('#200 input').val() * 200;
-          suma = suma + $('#100 input').val() * 100;
-          suma = suma + $('#50 input').val() * 50;
-          suma = suma + $('#20 input').val() * 20;
-          suma = suma + $('#10 input').val() * 10;
-          suma = suma + $('#5 input').val() * 5;
-          suma = suma + $('#2 input').val() * 2;
-          suma = suma + $('#1 input').val() * 1;
-          suma = '$'+suma
-          $('#result').html(suma);
-      });
-
-      $('#limpiar').click(function(){
-          $('#1000 input').val('');
-          $('#500 input').val('');
-          $('#200 input').val('');
-          $('#100 input').val('');
-          $('#50 input').val('');
-          $('#20 input').val('');
-          $('#10 input').val('');
-          $('#5 input').val('');
-          $('#2 input').val('');
-          $('#1 input').val('');
-          $('#result').html('$0');
-      });
-    </script>
+    <script src="js/app.js"></script>
 
   </body>
 </html>
