@@ -1,6 +1,7 @@
 body{
   background: url('../img/background.jpg');
   background-attachment: fixed;
+  margin-bottom: 62px;
 }
 
 #top-bar{
@@ -29,6 +30,23 @@ body{
     font-size: 20px;
     right: 14px;
   }
+  #top-bar i:active{
+    color:lightgray;
+  }
+
+.btn-danger{
+  background: #DC5257;
+  border-color: #983034!important;
+}
+.btn-primary:danger{
+  background: #983034;
+}
+
+.modal-content{
+    width: 350px;
+    margin: 0 auto;
+}
+
 
 
 #main-holder{
@@ -55,8 +73,9 @@ body{
     background: #B3B3B3;
   }
 
-  .money-row button:active i{
-    color: #DC5257;
+  .money-row button:active{
+    background: #DC5257;
+    color:white;
   }
 
   .money-row button i{
@@ -109,5 +128,16 @@ body{
     display: inline-block;
     width: 139px;
     margin-left: 5px;
+  }
+
+  #result i{
+    position: absolute;
+    bottom: 8px;
+    font-size: 30px;
+    right: 16px;
+  }
+
+  #result i:active{
+    color: #DC5257;
   }
 
