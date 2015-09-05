@@ -139,6 +139,10 @@ function showResult(){
   $('#result .total').html('$'+suma)
 }
 
+$('#top-bar i').click(function(){
+    alert('Cuentapesos te ayuda a contar tu dinero facilmente, solo presiona + para sumar un billete o una moneda, hazlo para cada billete y monedas que tengas y verás como el resultado se actualiza cada vez que agregas o quitas uno');
+});
+
 $('#limpiar').click(function(){
     $('input').val('');
     $('#result').html('$0');
