@@ -1,5 +1,5 @@
 body{
-  background: url('../img/background.jpg') no-repeat;
+  background: url('../img/background.jpg');
 }
 
 #top-bar{
@@ -11,6 +11,7 @@ body{
   #top-bar img{
     position: relative;
     top: 8px;
+    width: 110px;
   }
 
 
@@ -38,12 +39,17 @@ body{
     background: #B3B3B3;
   }
 
+  .money-row button i{
+    position: relative;
+    top: 2px;
+  }
+
   .money-row button.plus{
-    border-radius: 7px 0 0 7px;
+    border-radius: 0 7px 7px 0;
   }
 
   .money-row button.minus{
-    border-radius: 0 7px 7px 0;
+    border-radius: 7px 0 0 7px;
   }
 
   .money-row .ammount{
@@ -62,8 +68,13 @@ body{
   border-top: 3px solid #DC5257;
   margin-top: 8px;
   color: white;
-  padding-top: 0px;
+  padding-top: 4px;
+  height: 52px;
   font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #975630;
 }
 
   #result .holder{
